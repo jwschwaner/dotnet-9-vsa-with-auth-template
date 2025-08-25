@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <PackAsTool>false</PackAsTool>
+    <PackageType>Template</PackageType>
+    <IsPackable>true</IsPackable>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <PackageId>Jwschwaner.WebApi.VSA.Template</PackageId>
+    <Version>0.2.0</Version>
+    <Authors>Julius Schwaner</Authors>
+    <Description>Julius Schwaner: .NET 9 Web API template with Vertical Slice Architecture, Identity, EF Core, Serilog, and Scalar.</Description>
+    <PackageTags>dotnet-new;template;webapi;vertical-slice;identity;efcore;serilog;scalar;jwschwaner</PackageTags>
+    <RepositoryUrl>https://github.com/jwschwaner/dotnet-9-vsa-with-auth-template</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/jwschwaner/dotnet-9-vsa-with-auth-template</PackageProjectUrl>
+    <PackageReadmeFile>TemplatePack.README.md</PackageReadmeFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="..\content\**\*" Pack="true" PackagePath="content\" />
+    <None Include="..\.template.config\template.json" Pack="true" PackagePath=".template.config\" />
+    <None Include="TemplatePack.README.md" Pack="true" PackagePath="/" />
+  </ItemGroup>
+</Project>
