@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Your Name",
+  "classifications": [ "Web", "WebAPI", "API", "VSA" ],
+  "identity": "MyWebApi.VSA.Template",
+  "name": ".NET Web API with Vertical Slice Architecture",
+  "shortName": "webapi-vsa",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "MyWebApi",
+  "preferNameDirectory": true,
+  "symbols": {
+    "AdminEmail": {
+      "type": "parameter",
+      "datatype": "string",
+      "isRequired": true,
+      "displayName": "Admin Email",
+      "description": "Email address for the default admin user"
+    },
+    "AdminPassword": {
+      "type": "parameter",
+      "datatype": "string",
+      "isRequired": true,
+      "displayName": "Admin Password", 
+      "description": "Password for the default admin user (minimum 8 characters, must contain uppercase, lowercase, digit, and special character)"
+    }
+  },
+  "sources": [
+    {
+      "source": "content/",
+      "target": "./",
+      "modifiers": [
+        {
+          "exclude": [
+            "**/*.ps1",
+            "**/*.sh",
+            "**/debug-*.*",
+            "**/test-*.*"
+          ]
+        }
+      ]
+    }
+  ]
+}

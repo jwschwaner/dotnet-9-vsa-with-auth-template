@@ -1,0 +1,39 @@
+# Build artifacts
+bin/
+obj/
+**/bin/
+**/obj/
+
+# Visual Studio & VS Code
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Rider / JetBrains
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+
+# dotCover / coverage
+*.dotCover
+coverage/
+TestResults/
+
+# Tools / Artifacts
+artifacts/
+
+# Local test output from test script
+TestApi/
+
+# Logs
+*.log
